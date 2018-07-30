@@ -2,6 +2,8 @@ package cn.shuhe.common;
 
 import java.io.Serializable;
 import java.util.List;
+
+
 /**
  * 分页结果类
  * @author Administrator
@@ -11,7 +13,11 @@ public class PageResult implements Serializable{
 
 	private long total;//总记录数
 	private List rows;//当前页记录
-		
+
+
+	public PageResult() {
+	}
+
 	public PageResult(long total, List rows) {
 		super();
 		this.total = total;

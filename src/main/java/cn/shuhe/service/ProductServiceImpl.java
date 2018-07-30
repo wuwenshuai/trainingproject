@@ -85,10 +85,12 @@ public class ProductServiceImpl implements IProductService{
 
     @Override
     public Result updateProductByProduct(Product product) {
+
         //修改时间
         product.setCreatedAt(new Date());
         product.setUpdatedAt(new Date());
-        int i = productMapper.updateByPrimaryKey(product);
+        int i = productMapper.updateByPrimaryKeySelective(product);
+       // int i = productMapper.updateByPrimaryKey(product);
         if (i<=0){
             return new Result(false,"更新失败");
         }

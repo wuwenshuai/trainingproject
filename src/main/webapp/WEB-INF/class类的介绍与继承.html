@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class类的介绍</title>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/browser.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+
+        class Person{
+            constructor (name,age,gender){
+                this.name=name
+                this.age=age
+                this.gender=gender
+            }
+            sayHello(){
+                window.alert('hello'+this.name)
+            }
+        }
+
+        //类的继承
+         class Stu extends Person{
+            constructor(name,age,gender){
+                super(name,age,gender)
+            }
+
+         }
+         const stu = new Stu('zhangsan',22,'0');
+
+       stu.sayHello()
+        console.log(stu)
+    </script>
+
+</body>
+</html>

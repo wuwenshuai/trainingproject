@@ -1,6 +1,10 @@
 package cn.shuhe.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Builder;
+
 import java.util.Date;
+
 
 public class Product {
 
@@ -15,10 +19,10 @@ public class Product {
 
     private String productImg;
 
-
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT-8")
     private Date createdAt;
 
-
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT-8")
     private Date updatedAt;
 
 

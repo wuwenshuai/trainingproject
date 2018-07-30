@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/browser.min.js"></script>
+    <style type="text/css">
+        .appss{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="app1"></div>
+    <script type="text/babel">
+
+        const user = {
+            name:'carry',
+            age:23,
+            gender:'0'
+        }
+        const element = (
+            <div>
+
+                <h1>姓名:{user.name}</h1>
+                <h1>年龄:{user.name}</h1>
+                <h1>性别:{user.gender == 0 ? '男':'女'}</h1>
+            </div>
+        )
+        ReactDOM.render(
+            element,
+            document.getElementById('app1')
+        )
+    </script>
+
+    <div id="app2"></div>
+    <script type="text/babel">
+        const user = {
+            name:'shuai',
+            age:23,
+            gender:'0'
+        }
+        /*const element = (
+
+            <div>
+                <p>name:{user.name}</p>
+                <p>age:{user.age}</p>
+                <p>sex:{user.gender}</p>
+            </div>
+        )*/
+        const element = getGreeting(user);
+        ReactDOM.render(
+            element,
+            document.getElementById('app2')
+        )
+        function getGreeting(user) {
+            if(user){
+                return <h1>hello {user.name}</h1>
+            }
+            return <h1>Hello Stranger</h1>
+        }
+    </script>
+
+
+
+    <!--jsx 属性绑定-->
+    <div id="app3"></div>
+    <script type="text/babel">
+        const user = {
+            name:'shuai',
+            age:23,
+            gender:'0'
+        };
+        const element = <div className="appss">
+            <div title={user.name}>11</div>
+            <input type="checkbox" defaultChecked/>
+            <input type="text" defaultValue="hello"/>
+        </div>
+        ReactDOM.render(
+            element,
+            document.getElementById('app3')
+        )
+    </script>
+
+</body>
+</html>

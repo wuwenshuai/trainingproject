@@ -30,6 +30,10 @@ public class Result {
     public Result() {
     }
 
+
+
+
+
     public Result(String msg) {
 
         this.msg = msg;

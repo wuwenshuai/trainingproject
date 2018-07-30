@@ -26,13 +26,13 @@ public class ProductController {
     }
 
     @RequestMapping(value = "/selectProductPageList",method = RequestMethod.GET)
-    public PageResult selectProductPageList(@RequestParam Integer pageNum,@RequestParam(required = false,defaultValue = "2") Integer pageSize){
+    public PageResult selectProductPageList(@RequestParam Integer pageNum,@RequestParam(required = false,defaultValue = "5") Integer pageSize){
         PageResult pageResult = productService.selectProductPageList(pageNum, pageSize);
         return pageResult;
     }
 
     @RequestMapping(value = "/selectProductByExample",method = RequestMethod.GET)
-    public PageResult selectProductBYExampl(@RequestParam Integer pageNum,@RequestParam(required = false,defaultValue = "2") Integer paegSize,@RequestParam(defaultValue = "") String productName){
+    public PageResult selectProductBYExampl(@RequestParam Integer pageNum,@RequestParam(required = false,defaultValue = "5") Integer paegSize,@RequestParam(defaultValue = "") String productName){
         PageResult pageResult = productService.selectProductBYExampl(pageNum, paegSize, productName);
         return pageResult;
     }

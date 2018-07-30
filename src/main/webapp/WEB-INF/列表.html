@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/browser.min.js"></script>
+</head>
+<body>
+<div id="app"></div>
+    <script type="text/babel">
+        const fruits = [
+            <li key="1">苹果</li>,
+            <li key="2">香蕉</li>,
+            <li key="3">橘子</li>
+
+        ]
+        const element =(
+            <div>
+                <ul>{fruits}</ul>
+            </div>
+        )
+
+        const todos = [
+            {
+                id:1,
+                title:'eat'
+            },
+            {
+                id:2,
+                title:'sleep'
+            },
+            {
+                id:1,
+                title:'drink'
+            }
+        ];
+
+        ReactDOM.render(
+            element,
+            document.getElementById('app')
+        )
+    </script>
+
+    <div>------------事件绑定-------------------</div>
+
+    <div id="app1"></div>
+    <script type="text/babel">
+        function sayHello() {
+            window.alert("hello")
+        }
+        const element = (
+            <button onClick={sayHello}>点我啊</button>
+        )
+
+        ReactDOM.render(
+            element,
+            document.getElementById('app1')
+        )
+    </script>
+
+     
+
+
+
+
+
+
+</body>
+</html>

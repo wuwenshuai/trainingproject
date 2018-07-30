@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件</title>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/browser.min.js"></script>
+</head>
+<body>
+
+    <div id="app1"></div>
+    <script type="text/babel">
+
+        //定义一个头部组件
+        function AppHeader() {
+            return (
+                <div className="header">
+                    <h1>头部</h1>
+                </div>
+            )
+        }
+        //定义一个中间组件
+        function AppAside() {
+            return (
+                <div className="aside">
+                    <ul>
+                        <li>正在热映</li>
+                        <li>即将上映</li>
+                    </ul>
+                </div>
+            )
+        }
+
+        //定义一个尾部组件
+        function AppFoot() {
+            return (
+                <div className="footer">
+                    <p>页脚</p>
+                </div>
+            )
+        }
+
+        //定义一个欢迎组件
+        function Welcome(props) {
+            return (
+                <div>
+                    <h1>hello ,{props.name}</h1>
+                </div>
+            )
+        }
+
+        class AppFooter extends  React.Component{
+            constructor(){
+                super()
+                //state就是组件的状态，也就是把数据驱动视图的数据初始化到state中
+                this.state={
+                    foo:'呵呵'
+                }
+
+                setTimeout(()=>{
+                    this.setState({
+                        foo:'baz'
+                    })
+                },2000)
+            }
+
+            render() {
+                return (
+                    <div className="footer">
+                        <p>底部---{this.state.foo}</p>
+                    </div>
+                )
+            }
+
+
+        }
+
+        const element = (
+            <div>
+                <AppHeader/>
+                <AppAside/>
+                <AppFoot/>
+                <AppFooter/>
+                <Welcome name="张三"/>
+                <Welcome name="李四"/>
+                <Welcome name="王二"/>
+            </div>
+
+
+        )
+        ReactDOM.render(
+            element,
+            document.getElementById('app1')
+        )
+    </script>
+</body>
+</html>

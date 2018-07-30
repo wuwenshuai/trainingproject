@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/browser.min.js"></script>
+</head>
+<body>
+    <div id="id"></div>
+    <script type="text/babel">
+        ReactDOM.render(
+            <div>
+                <h1>{1 == 1 ? 'true': 'false'}</h1>
+            </div>
+            ,
+            document.getElementById("id")
+
+        )
+    </script>
+
+    <div id="id1"></div>
+
+    <script type="text/babel">
+        var myStyle = {
+            fontSize :100,
+            color :'#FF0000'
+        };
+        ReactDOM.render(
+            <h1 style = {myStyle}>菜鸟教程</h1>,
+            document.getElementById("id1")
+
+        );
+    </script>
+
+
+    <div id="id2"></div>
+    <script type="text/babel">
+        var arr = [
+            <h1>菜鸟教程</h1>,
+            <h1>学的不仅是技术，更是梦想！</h1>
+        ];
+        ReactDOM.render(
+            <div>{arr}</div>,
+            document.getElementById("id2")
+        );
+    </script>
+
+    <div id="id3"></div>
+    <script type="text/babel">
+        //生成一个组件类
+        var HelloMessage = React.createClass({
+           render : function () {
+               return <h1>hello world {this.props.name}</h1>;
+           }
+        });
+
+        ReactDOM.render(
+            <HelloMessage name="carry"/>,
+            document.getElementById("id3")
+        )
+    </script>
+
+    <div id="id4"></div>
+    <script type="text/babel">
+        var WebSite = React.createClass({
+            render: function() {
+                return (
+                    <div>
+                        <Name name={this.props.name} />
+                        <Link site={this.props.site} />
+                    </div>
+                );
+            }
+        });
+        var Name = React.createClass({
+            render:function () {
+                return (
+                    <h1>{this.props.name}</h1>
+                );
+            }
+        });
+        var Link = React.createClass({
+            render: function() {
+                return (
+                    <a href={this.props.site}>
+                        {this.props.site}
+                    </a>
+                );
+            }
+        });
+
+        ReactDOM.render(
+            <WebSite name="菜鸟教程" site="www.baidu.com"/>,
+            document.getElementById('id4')
+        )
+    </script>
+    <div id="app"></div>
+    <script type="text/babel">
+
+        ReactDOM.render(
+            <div>
+                <h1>hello</h1>
+            </div>
+            ,document.getElementById("app"))
+
+    </script>
+<script type="text/babel">
+
+    const element =  getTitle()
+    const elements = (
+        <div>
+            <h1>111111111111</h1>
+            <p>1111111111111</p>
+        </div>
+    )
+    function getTitle(){
+        return (
+            <div>
+                <h1>hello carry shuai</h1>
+                <p>111111111111111111</p>
+            </div>
+            )
+    }
+    ReactDOM.render(
+        element,
+        document.getElementById('app')
+    )
+</script>
+
+<div id="app1"></div>
+<script type="text/babel">
+
+    const user = {
+        name: 'Jacl',
+        age: 18,
+        gender:0
+    }
+    const element =(
+        <div>
+            <p>name:{user.name}</p>
+            <p>age:{user.age}</p>
+            <p>sex:{user.gender ==0 ? '男':'女'}</p>
+        </div>
+    )
+    ReactDOM.render(
+        element,
+        document.getElementById('app1')
+    )
+
+</script>
+
+
+
+
+
+</body>
+</html>

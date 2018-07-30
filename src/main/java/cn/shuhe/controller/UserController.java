@@ -68,8 +68,6 @@ public class UserController {
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public Result login(@RequestBody User user, HttpSession session){
         Result result = userService.login(user);
-        //把登陆用户放到session中去
-        session.setAttribute("LoginUser",user);
         return result;
     }
 
@@ -77,8 +75,9 @@ public class UserController {
     //注册用户
     @RequestMapping(value = "/register",method = RequestMethod.POST)
     public Result register(@RequestBody User user){
-        Result result = userService.register(user.getUserName(), user.getUserPassword());
-        return result;
+
+
+        return userService.register(user.getUserName(), user.getUserPassword());
     }
 
 

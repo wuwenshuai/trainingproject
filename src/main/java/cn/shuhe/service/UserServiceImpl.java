@@ -1,6 +1,7 @@
 package cn.shuhe.service;
 
 import cn.shuhe.common.Result;
+import cn.shuhe.common.UserContent;
 import cn.shuhe.domain.User;
 import cn.shuhe.domain.UserExample;
 import cn.shuhe.mapper.UserMapper;
@@ -31,13 +32,6 @@ public class UserServiceImpl implements IUserService{
 
     @Override
     public Result register(String userName, String passWord) {
-        User user = new User();
-        user.setUserName(userName);
-        //创建时间
-        user.setCreatedAt(new Date());
-        user.setUpdatedAt(new Date());
-
-
         //判断输入的参数是否合法
         //1 判断用户名是否为空
         if (StringUtils.isBlank(userName)){
@@ -47,6 +41,21 @@ public class UserServiceImpl implements IUserService{
         if (StringUtils.isBlank(passWord)){
             return new Result(false,"，密码不能为空");
         }
+        // 先判断用户是否已经注册过
+        UserExample example = new UserExample();
+        example.createCriteria().andUserNameEqualTo(userName);
+        List<User> users = userMapper.selectByExample(example);
+        if (users !=null && users.size()>0){
+            return new Result(false,"该用户已经注册过");
+        }
+        User user = new User();
+        user.setUserName(userName);
+        //创建时间
+        user.setCreatedAt(new Date());
+        user.setUpdatedAt(new Date());
+
+
+
         //md5加密
         String md5password = DigestUtils.md5DigestAsHex(passWord.getBytes());
         user.setUserPassword(md5password);
@@ -78,6 +87,8 @@ public class UserServiceImpl implements IUserService{
         if (!userLogin.getUserPassword().equals(md5DigestAsHex)){
             return new Result(false,"密码错误");
         }
+        //  把用户放到session中
+        UserContent.putCurrent(userLogin);
         return new Result(true,"登陆成功");
     }
 
