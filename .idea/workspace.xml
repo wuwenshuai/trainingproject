@@ -6,38 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33b6571b-8578-4254-b984-c811de8b5b68" name="Default" comment="fix">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/Bar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/Foo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/TestBuilerdDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/UserContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/class方式定义组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/class类的介绍与继承.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/browser.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/react-dom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/react.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/react组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/列表.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/列表渲染.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/带有状态的class组件.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/PageResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/common/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/shuhe/controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/shuhe/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/shuhe/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/shuhe/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/shuhe/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/shuhe/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/shuhe/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="33b6571b-8578-4254-b984-c811de8b5b68" name="Default" comment="fix" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -638,7 +607,7 @@
       <workItem from="1531876606247" duration="17623000" />
       <workItem from="1531992417606" duration="2868000" />
       <workItem from="1532424486888" duration="974000" />
-      <workItem from="1532568597754" duration="22159000" />
+      <workItem from="1532568597754" duration="22413000" />
     </task>
     <servers />
   </component>
@@ -675,13 +644,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127522000" />
+    <option name="totallyTimeSpent" value="127776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.114583336" side_tool="true" visible="true" weight="0.1981132" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50069445" side_tool="true" visible="true" weight="0.4587264" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32933334" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -699,10 +668,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8854167" visible="true" weight="0.1981132" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8854167" weight="0.1981132" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.11007958" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22152779" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49930555" visible="true" weight="0.4587264" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22152779" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.30833334" weight="0.19339623" />
       <window_info anchor="right" id="Theme Preview" order="7" />
